@@ -1,0 +1,30 @@
+package in.finroute.apigateway.management.dto.responsedto;
+
+import in.finroute.apigateway.management.entity.ManagementUser;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+import java.time.LocalDateTime;
+
+@Getter
+@AllArgsConstructor
+public class TenantAdminResponse {
+
+    private Long id;
+    private Long organizationId;
+    private String username;
+    private boolean enabled;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+
+    public static TenantAdminResponse from(ManagementUser user) {
+        return new TenantAdminResponse(
+                user.getId(),
+                user.getOrganization().getId(),
+                user.getUsername(),
+                user.isEnabled(),
+                user.getCreatedAt(),
+                user.getUpdatedAt()
+        );
+    }
+}

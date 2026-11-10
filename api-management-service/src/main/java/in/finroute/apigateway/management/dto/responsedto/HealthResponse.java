@@ -1,4 +1,4 @@
-package in.finroute.apigateway.management.dto;
+package in.finroute.apigateway.management.dto.responsedto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,6 +1,6 @@
 package in.finroute.apigateway.management.controller;
 
-import in.finroute.apigateway.management.dto.HealthResponse;
+import in.finroute.apigateway.management.dto.responsedto.HealthResponse;
 import in.finroute.apigateway.management.service.HealthService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
