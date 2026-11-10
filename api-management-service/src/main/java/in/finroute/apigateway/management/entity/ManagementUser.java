@@ -1,3 +1,5 @@
+package in.finroute.apigateway.management.entity;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;

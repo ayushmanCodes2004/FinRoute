@@ -1,3 +1,5 @@
+package in.finroute.apigateway.management.dto.requestdto;
+
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;

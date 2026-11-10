@@ -1,3 +1,5 @@
+package in.finroute.apigateway.management.entity;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;

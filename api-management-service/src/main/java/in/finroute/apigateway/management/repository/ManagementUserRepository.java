@@ -1,3 +1,6 @@
+package in.finroute.apigateway.management.repository;
+
+import in.finroute.apigateway.management.entity.ManagementUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
