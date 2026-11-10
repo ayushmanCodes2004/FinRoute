@@ -14,17 +14,13 @@ public class TenantAdminResponse {
     private Long organizationId;
     private String username;
     private boolean enabled;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
-
+    
     public static TenantAdminResponse from(ManagementUser user) {
         return new TenantAdminResponse(
                 user.getId(),
                 user.getOrganization().getId(),
                 user.getUsername(),
-                user.isEnabled(),
-                user.getCreatedAt(),
-                user.getUpdatedAt()
+                user.isEnabled()
         );
     }
 }
